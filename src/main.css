@@ -1,0 +1,46 @@
+body {
+  background-color: #EDEDED;
+}
+
+/* HEADER */
+
+#header {
+  display: grid;
+  grid-template-columns: 30px 1fr 1fr 30px;
+  grid-template-areas: "a logo nav b";
+  position: fixed;
+}
+
+#logo {
+  grid-column: 2 / 3;
+  grid-area: logo;
+}
+
+#header-img {
+  width: 50%;
+}
+
+#nav-bar {
+  grid-column: 3 / 4;
+  grid-area: nav;
+  display: grid;
+  grid-template-areas: "feature how_it_works pricing";
+}
+
+#feature {
+  grid-area: feature;
+}
+
+#how_it_works {
+  grid-area: how_it_works;
+}
+
+#pricing {
+  grid-area: pricing;
+}
+
+.nav-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
