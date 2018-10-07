@@ -1,13 +1,48 @@
 body {
   background-color: #EDEDED;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+#header {
+  grid-row: 1;
+}
+
+#container {
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: 800px;
+  grid-template-rows: repeat(4, 1fr);
+  justify-self: center;
+}
+
+#get_start {
+  grid-area: 1;
+  background-color: gold;
+}
+
+#a {
+  grid-area: 2;
+  background-color: aqua;
+}
+
+#b {
+  grid-area: 3;
+  background-color: brown;
+}
+
+.ji {
+  justify-items: center;
 }
 
 /* HEADER */
-
+/*
 #header {
   display: grid;
   grid-template-columns: 30px 1fr 1fr 30px;
   grid-template-areas: "a logo nav b";
+  grid-area: header;
   position: fixed;
 }
 
@@ -44,3 +79,12 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+
+
+#container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(5, 1fr);
+}
+ */
