@@ -58,6 +58,11 @@ body {
   grid-row: 1;
 }
 
+.premium_materials {
+  grid-row: 1;
+  grid-auto-rows: 2;
+}
+
 .fa-truck {
   grid-row: 2;
 }
