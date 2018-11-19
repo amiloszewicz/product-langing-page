@@ -84,7 +84,7 @@ body {
 
 footer {
   grid-row: 5;
-  background-color: black;
+  background-color: grey;
   width: 800px;
   justify-self: center;
 }
