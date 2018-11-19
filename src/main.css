@@ -54,6 +54,18 @@ body {
   grid-template-rows: repeat(3, 1fr);
 }
 
+.fa-crown {
+  grid-row: 1;
+}
+
+.fa-truck {
+  grid-row: 2;
+}
+
+.fa-battery-full {
+  grid-row: 3;
+}
+
 #video {
   grid-area: 3;
   background-color: brown;
