@@ -2,89 +2,72 @@ body {
   background-color: #EDEDED;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(3, minmax(50px, max-content));
+  grid-gap: 20px;
 }
 
 #header {
   grid-row: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: fixed;
+  height: 40px;
+  width: 100%;
+}
+
+#header-img {
+  width: 350px;
+  margin-left: 40px;
+}
+
+#nav-bar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#nav-bar a {
+  justify-self: center;
+  align-self: center;
 }
 
 #container {
   grid-row: 2;
   display: grid;
   grid-template-columns: 800px;
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
   justify-self: center;
 }
 
-#get_start {
+#email {
   grid-area: 1;
-  background-color: gold;
 }
 
-#a {
+#form {
+  text-align: center;
+}
+
+#description {
   grid-area: 2;
   background-color: aqua;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: repeat(3, 1fr);
 }
 
-#b {
+#video {
   grid-area: 3;
   background-color: brown;
 }
 
-.ji {
-  justify-items: center;
-}
-
-/* HEADER */
-/*
-#header {
+#product {
   display: grid;
-  grid-template-columns: 30px 1fr 1fr 30px;
-  grid-template-areas: "a logo nav b";
-  grid-area: header;
-  position: fixed;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
 }
 
-#logo {
-  grid-column: 2 / 3;
-  grid-area: logo;
+footer {
+  grid-row: 5;
+  background-color: black;
+  width: 800px;
+  justify-self: center;
 }
-
-#header-img {
-  width: 50%;
-}
-
-#nav-bar {
-  grid-column: 3 / 4;
-  grid-area: nav;
-  display: grid;
-  grid-template-areas: "feature how_it_works pricing";
-}
-
-#feature {
-  grid-area: feature;
-}
-
-#how_it_works {
-  grid-area: how_it_works;
-}
-
-#pricing {
-  grid-area: pricing;
-}
-
-.nav-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-
-#container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: repeat(5, 1fr);
-}
- */
